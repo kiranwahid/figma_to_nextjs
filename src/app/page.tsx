@@ -1,101 +1,190 @@
 import Image from "next/image";
+import pic1 from "../app/public/pic1.png";
+import pic2 from "../app/public/pic2.png";
+import pic3 from "../app/public/pic3.png";
+import pic4 from "../app/public/pic4.png";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <section className="mx-auto h-full bg-[#faf5f5] ">
+      <div className="max-w-7xl flex justify-center lg:items-center mx-auto lg:flex-row px-4 sm:px-6 md:px-8 xl:px-4">
+        <div className="w-[1030px] h-[308px] mx-auto flex justify-between items-center mt-20 ">
+          <div className="w-[521px] h-[305px]  flex flex-col gap-4 ">
+            <h1 className=" font-black text-[42px] leading-[61px]">
+              Hi, I am John, Creative Technologist
+            </h1>
+            <p className="w-[496px] h-[66] text-[16px] font-normal leading-[23.5px]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button
+              className="w-[205px] h-[50px]  bg-[#F98585] text-[18px] font-medium rounded-[2px] leading-[26.44px] drop-shadow-[0_0px_3px_rgba(117,195,16,0.24)];
+">
+              Download Resume
+            </button>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="w-[298px] h-[308px]">
+            <Image src={pic1} alt="" width={292} height={299} />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+
+      <div className="max-w-7xl flex justify-between lg:items-center mx-auto h-[100vh] lg:flex-row px-4 sm:px-6 md:px-8 xl:px-4">
+        <div className=" h-[502px] w-full mx-auto flex justify-center gap-8 items-center bg-[#f4e2e2]">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-[22px] font-normal text-[#000]">Resent Post</h1>
+            <div className="w-[483px] h-[356px]  flex flex-col gap-4  bg-white  px-8">
+              <h1 className="text-[26px] font-bold mt-8">
+                Making a design system from scratch
+              </h1>
+              <div className="w-[301.28px] h-[48.12px]  flex gap-8 items-center">
+                <h1 className="text-[18px] font-normal text-[#000]">
+                  12 Feb 2020
+                </h1>
+                <h1 className="h-[17.5px] text-[#000]">|</h1>
+                <h1 className="text-[18px] font-normal">Design , Pattern</h1>
+              </div>
+              <div className="w-[391px] h-[129.7px]">
+                <p className="text-[16px] font-normal leading-[23.5px] text-justify">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-end">
+            <a href="" className="text-[22px] font-medium text-[#F98585]">
+              view all
+            </a>
+            <div className="w-[483px] h-[356px]  flex flex-col gap-4 bg-white px-8">
+              <h1 className="text-[26px] font-bold mt-8">
+                Making a design system from scratch
+              </h1>
+              <div className="w-[301.28px] h-[48.12px]  flex gap-8 items-center">
+                <h1 className="text-[18px] font-normal text-[#000]">
+                  12 Feb 2020
+                </h1>
+                <h1 className="h-[17.5px] text-[#000]">|</h1>
+                <h1 className="text-[18px] font-normal">Design , Pattern</h1>
+              </div>
+              <div className="w-[391px] h-[129.7px]">
+                <p className="text-[16px] font-normal leading-[23.5px] text-justify">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl flex justify-between lg:items-center mx-auto h-full lg:flex-row px-4 sm:px-6 md:px-8 xl:px-4">
+        <div className="flex flex-col justify-center mx-auto gap-2">
+        <h1 className="text-[22px] font-medium leading-[33.31px] ml-12 ">Featured works</h1>
+        <div className="w-[991px] h-[934px]  mx-auto flex  flex-col">
+          <div className=" mt-4 gap-8  flex justify-center items-center">
+            <div className="h-[272.1px]">
+              <Image src={pic2} alt="dashboard" width={246} height={180} />
+            </div>
+            <div className="w-[623px] h-[272.1px] flex flex-col gap-4">
+              <h1 className="text-[30px] font-bold leading-[44.06px]">
+                Designing Dashboards{" "}
+              </h1>
+              <div className="flex gap-8">
+                <h1 className="text-[18px] font-bold leading-[26.44px] text-center w-[68px] h-[24px] rounded-full text-white bg-[#F98585]">
+                  2020
+                </h1>
+                <h1 className="text-[20px] font-normal leading-[29.38px]">
+                  Dashboard
+                </h1>
+              </div>
+              <div className="w-[622px] h-[170px]">
+                <p className="text-[18px] font-light leading-[26.44px]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+          <div className=" mt-4 gap-8  flex justify-center items-center">
+            <div className="h-[272.1px]">
+              <Image src={pic4} alt="dashboard" width={246} height={180} />
+            </div>
+            <div className="w-[623px] h-[272.1px] flex flex-col gap-4">
+              <h1 className="text-[30px] font-bold leading-[44.06px]">
+                Designing Dashboards
+              </h1>
+              <div className="flex gap-8">
+                <h1 className="text-[18px] font-bold leading-[26.44px] text-center w-[68px] h-[24px] rounded-full text-white bg-[#F98585]">
+                  2020
+                </h1>
+                <h1 className="text-[20px] font-normal leading-[29.38px]">
+                  Dashboard
+                </h1>
+              </div>
+              <div className="w-[622px] h-[170px]">
+                <p className="text-[18px] font-light leading-[26.44px]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div>
+          <div className=" mt-4 gap-8  flex justify-center items-center">
+            <div className="h-[272.1px]">
+              <Image src={pic3} alt="dashboard" width={246} height={180} />
+            </div>
+            <div className="w-[623px] h-[272.1px] flex flex-col gap-4">
+              <h1 className="text-[30px] font-bold leading-[44.06px]">
+                Designing Dashboards
+              </h1>
+              <div className="flex gap-8">
+                <h1 className="text-[18px] font-bold leading-[26.44px] text-center w-[68px] h-[24px] rounded-full text-white bg-[#F98585]">
+                  2020
+                </h1>
+                <h1 className="text-[20px] font-normal leading-[29.38px]">
+                  Dashboard
+                </h1>
+              </div>
+              <div className="w-[622px] h-[170px]">
+                <p className="text-[18px] font-light leading-[26.44px]">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+
+        
+      </div>
+      <div className="max-w-7xl flex justify-center lg:items-center mx-auto h-[243px] lg:flex-row px-4 sm:px-6 md:px-8 xl:px-4">
+        <div className="flex justify-center items-center flex-col gap-4">
+        <div className="flex gap-8">
+        <FaFacebookSquare  className="w-[30px] h-[30px] text-[#21243D] "/>
+        <FaInstagram  className="w-[30px] h-[30px] text-[#21243D] "/>
+        <FaTwitter className="w-[30px] h-[30px] text-[#21243D] "/>
+        <FaLinkedin  className="w-[30px] h-[30px] text-[#21243D] "/>
+        </div>
+<p className="text-[22px] font-medium">Copyright ©2020 All rights reserved</p>
+        </div>
+        </div>
+    </section>
   );
 }
